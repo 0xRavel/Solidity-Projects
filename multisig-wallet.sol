@@ -20,7 +20,7 @@ contract MultiSigWallet {
     uint public required;
 
     Transaction[] public transactions;
-    // mapping from tx id => owner => bool
+    // mapping from the tx id => owner => bool
     mapping(uint => mapping(address => bool)) public approved;
 
     modifier onlyOwner() {
