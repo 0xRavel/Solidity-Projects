@@ -43,7 +43,7 @@ contract Swapper {
         swaps[swapId].approve[msg.sender] = true;
     }
 
-    function Deligate(uint swapId) public CheckHolding(swapId){
+    function Delegate(uint swapId) public CheckHolding(swapId){
         address owner1 = swaps[swapId].owner1;
         address owner2 = swaps[swapId].owner2;
         IERC20 token1 = swaps[swapId].token[owner1];
